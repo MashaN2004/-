@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Великан-тяжеловес<br>
+		Мечет молнии с небес,<br>
+		Полосат он, словно кошка,<br>
+		Жаль худеет понемножку...
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Ю</h1>
+		</div>
+		<div class="letter2">
+			<h1>П</h1>
+		</div>
+		<div class="letter3">
+			<h1>И</h1>
+		</div>
+		<div class="letter4">
+			<h1>Т</h1>
+		</div>
+		<div class="letter5">
+			<h1>Е</h1>
+		</div>
+		<div class="letter6">
+			<h1>Р</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="a">A</span>
+	<span class="b">Б</span>
+	<span class="v">В</span>
+	<span class="g">Г</span>
+	<span class="d">Д</span>		
+	<span class="e">Е</span>	
+	<span class="E">Ё</span>
+	<span class="G">Ж</span>
+	<span class="z">З</span>
+	<span class="i">И</span>
+	<span class="9">Й</span>
+	<span class="k">К</span>
+	<span class="l">Л</span>
+	<span class="m">М</span>
+	<span class="n">Н</span>
+	<span class="o">О</span>
+	<span class="p">П</span>
+	<span class="r">Р</span>
+	<span class="c">С</span>
+	<span class="t">Т</span>
+	<span class="y">У</span>
+	<span class="w">Ф</span>
+	<span class="H">Х</span>
+	<span class="C">Ц</span>
+	<span class="ch">Ч</span>
+	<span class="sh">Ш</span>
+	<span class="Sht">Щ</span>
+	<span class="L0">Ъ</span>
+	<span class="O">Ы</span>
+	<span class="L">Ь</span>
+	<span class="U">Э</span>
+	<span class="u">Ю</span>
+	<span>Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. Да, надо каждой букве придумывать новый класс.
+		3. Придумай свой вопрос и ответ. 
+		 */
+		 document.querySelector('.u').onclick = function(){
+		 	document.querySelector('.letter1').style.background = "white";
+		 }
+		 document.querySelector('.p').onclick = function(){
+		 	document.querySelector('.letter2').style.background = "white";
+		 }
+		 document.querySelector('.i').onclick = function(){
+		 	document.querySelector('.letter3').style.background = "white";
+		 }
+		 document.querySelector('.t').onclick = function(){
+		 	document.querySelector('.letter4').style.background = "white";
+		 }
+		 document.querySelector('.e').onclick = function(){
+		 	document.querySelector('.letter5').style.background = "white";
+		 }
+		 document.querySelector('.r').onclick = function(){
+		 	document.querySelector('.letter6').style.background = "white";
+		 }
+		 document.querySelector('.b').onclick = function(){
+		 	alert('Mistake')
+		 }
+		 document.querySelector('.a').onclick = function(){
+		 	alert('Mistake')
+		 }
+
+	</script>
+</body>
+</html>
